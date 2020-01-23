@@ -1,0 +1,313 @@
+@charset "UTF-8";
+
+/*すべてのページに適用される*/
+
+html {
+  font-family: sans-serif;
+  color: white;
+}
+
+html * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: black;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+
+
+h2 {
+  color: white;
+  font-size: 22px;
+  border-bottom: 1px solid #d3d3d3;
+  margin: 20px 0 20px 0;
+  padding: 5px
+}
+
+p {
+  line-height: 1.6;
+}
+
+a:link {
+  color: white;
+}
+
+a:visited {
+  color: #d25833;
+}
+
+a:hover {
+  color: #e3937a;
+}
+
+a:active {
+  color: #ff6a3b;
+
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+/*すべてのページに適用*/
+.logo {
+  line-height: 38px;
+  margin-top: 20px;
+  font-weight: 700;
+  color: white;
+  text-align: left;
+  font-size: 25px
+}
+
+.nav li {
+  display: inline;
+  list-style-type: none;
+  padding-right: 60px;
+
+}
+
+.nav ul {
+  margin: auto;
+  padding: 20px 10px 15px 0px;
+}
+
+.nav a:link {
+  color: white;
+  text-decoration: none
+}
+
+.nav a:visited {
+  color: white;
+  text-decoration: none
+}
+
+.nav a:hover {
+  color: #7b8dac;
+  text-decoration: none
+}
+
+.nav a:active {
+  color: #5a9bc0;
+  text-decoration: none
+}
+
+/*すべてのページに適用される*/
+.footer {
+  background-image: url(../images/footer-bg.png);
+  background-repeat: no-repeat;
+  margin-top: 30px;
+  padding: 80px 15px 20px 15px;
+  font-size: 12px;
+  color: #3f5170;
+}
+
+/*個別のスタイル*/
+/*index.html*/
+
+.keyvisual {
+  margin: 15px 0 0 0;
+}
+
+.news-item {
+  margin: 0;
+}
+
+/* about.html*/
+.shop-photos {
+  display: flex;
+}
+
+
+.clear {
+  clear: both;
+}
+
+.info {
+  border-collapse: collapse;
+}
+
+.info th,
+.info td {
+  padding: 8px;
+  border: 1px solid #bec2c7;
+  text-align: left;
+}
+
+.info th {
+  background-color: white;
+  width: 180px;
+  vertical-align: top;
+}
+
+/*menu.html*/
+.select_menu li {
+  display: inline;
+  list-style-type: none;
+  padding-right: 60px;
+}
+
+.select_menu ul {
+  margin: auto;
+  padding: 20px 10px 15px 0px;
+}
+
+.select_menu a:link {
+  color: #3c454d;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.select_menu a:visited {
+  color: #3c454d;
+  text-decoration: none;
+}
+
+.select_menu a:hover {
+  color: #7b8dac;
+  text-decoration: none;
+}
+
+.select_menu a:active {
+  color: #5a9bc0;
+  text-decoration: none;
+}
+
+.cafe {
+  padding: 0 0.5em 0;
+  color: white!important;
+}
+.pub {
+    background-color: #be8cec;
+    padding: 0 0.5em 0;
+}
+
+
+
+
+.menu_block {
+  overflow: hidden;
+  zoom: 1;
+}
+
+.menu_left {
+  float: left;
+  width: 280px;
+  margin-right: 20px;
+}
+
+.menu_right {
+  float: left;
+  width: 600px;
+}
+
+table.menu_all {
+  border: none;
+  border-collapse: collapse;
+}
+
+table.menu_all td {
+  padding: 0;
+}
+
+table.menu_all td.photo {
+  padding: 0 10px 10px 0;
+}
+
+.menu_right h3 {
+  margin: 20px 0;
+  text-align: left;
+  font-size: 16px;
+  color: #22d0d2;
+}
+
+.menu_right p {
+  text-align: left;
+  font-size: 12px;
+}
+
+.like_button {
+  border-style: none;
+  background-color: black;
+  outline: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: #440af1;
+}
+
+
+
+
+/*スマーフォン向けCSS*/
+@media(max-width: 767px) {
+
+  /*  全体ナビゲーション */
+  .wrapper {
+    margin: 0 8px;
+  }
+
+  .logo {
+    margin: 30px, 0;
+  }
+
+  .logo img {
+    width: 200px;
+  }
+
+  .nav {
+    background-color: white;
+  }
+
+  .nav li {
+    display: block;
+  }
+
+  /*menu.html - 横並び解除*/
+  .menu-item {
+    display: block;
+  }
+
+  .menu-photo {
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .menu-text {
+    width: 100%;
+  }
+
+  /*  about.html - 画像のパディングを調整 */
+  .shop-photo {
+    padding-right: 0;
+  }
+
+
+
+  /*  contact.html - フォーム */
+  select {
+    width: 100%;
+  }
+
+  input[name="subject"] {
+    width: 100%;
+  }
+
+  textarea {
+    width: 100%;
+  }
+
+  input[type="submit"] {
+    margin: 20px 0;
+    width: 100%;
+  }
+}
